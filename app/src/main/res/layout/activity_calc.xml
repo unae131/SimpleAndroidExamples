@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="mainOnClick"
+            android:text="Do you wanna build a snowman?" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="mainMapOnClick"
+            android:text="Map Intent" />
+
+        <Button
+            android:id="@+id/main_counter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="mainThreadClick"
+            android:text="Show counter" />
+
+        <TextView
+            android:id="@+id/main_counter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="count 0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_x_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x_position" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/main_y_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="y_position" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/main_click_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click_num" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4EBE6" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
